@@ -1,0 +1,45 @@
+title = "GC App configuration file"
+
+#Comments next to an entry indicate the possible values to assign
+# Boolean values can take either 'true' or 'false'
+
+[INITIAL-MODE]
+    manipulation-mode = "CAMERA"                            # OBJECT, CAMERA, ILUMINATION
+    transformation-mode = "TRANSLATION"                     # TRANSLATION, ROTATION, SCALE, VELOCITY
+    reference-mode = "GLOBAL"                               # GLOBAL, LOCAL
+    camera-mode = "FREE"                                    # FREE, ANALISIS
+
+[USER-INTERFACE]
+    gui = true
+    cmd-verbose = false
+    cmd-status = true
+    show-axes = true
+    axes-size = 0.2                                        # Value between 0 and 1
+
+[FIRST-TIME]
+	first-run = true
+    first-camera-pos = [ 0.1, 3.8, -1.0]
+
+[MOUSE]
+    starting-sensitivity = 10.0
+    axis-x-inverted = false
+    axis-y-inverted = false
+
+[QUICKLOAD]
+    start-quickload = false
+    default-quickload-object-path = "objektuak/abioia.obj"
+    default-quickload-first-object-position = [ 0.0, 0.0, 0.0]
+    default-quickload-first-object-scale = [ 1.0, 1.0, 1.0]
+
+ [LIGHTING]
+    default-on = true
+    default-shading = "SMOOTH"                              # SMOOTH, FLAT
+    default-lights-on = [ 2, 4]
+
+[RENDERING]
+    default-render-mode = "COMBINED"                        # WIRE, SOLID, COMBINED
+    default-wireframe-width = 3.0
+    render-scenes = true
+
+[FUN]
+    selected-rainbow-material = true
